@@ -11,3 +11,15 @@ const answerEl = document.getElementById('answer');
 const addQuestionBtn = document.getElementById('add-question');
 const clearBtn = document.getElementById('clear');
 const addContainer = document.getElementById('add-container');
+
+// keep track of current card
+
+let currentActiveCard = 0;
+
+//store DOM cards
+
+const cardsEl = [];
+
+//store card data
+
+const cardData = getCardData();
